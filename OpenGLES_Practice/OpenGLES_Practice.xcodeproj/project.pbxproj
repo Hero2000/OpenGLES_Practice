@@ -16,6 +16,10 @@
 		20BB6E08250F83E700A4B386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB6E07250F83E700A4B386 /* main.m */; };
 		20BB6E12250F83E700A4B386 /* OpenGLES_PracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB6E11250F83E700A4B386 /* OpenGLES_PracticeTests.m */; };
 		20BB6E1D250F83E800A4B386 /* OpenGLES_PracticeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB6E1C250F83E800A4B386 /* OpenGLES_PracticeUITests.m */; };
+		20BB6E2C250F948600A4B386 /* TriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB6E2B250F948600A4B386 /* TriangleViewController.m */; };
+		20BB6E2F250F985A00A4B386 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BB6E2E250F985A00A4B386 /* TriangleView.m */; };
+		20BB6E31250F99D400A4B386 /* Triangle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 20BB6E30250F99D300A4B386 /* Triangle.fsh */; };
+		20BB6E33250F99FF00A4B386 /* Triangle.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 20BB6E32250F99FF00A4B386 /* Triangle.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,12 @@
 		20BB6E18250F83E800A4B386 /* OpenGLES_PracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLES_PracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BB6E1C250F83E800A4B386 /* OpenGLES_PracticeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLES_PracticeUITests.m; sourceTree = "<group>"; };
 		20BB6E1E250F83E800A4B386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20BB6E2A250F948600A4B386 /* TriangleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleViewController.h; sourceTree = "<group>"; };
+		20BB6E2B250F948600A4B386 /* TriangleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleViewController.m; sourceTree = "<group>"; };
+		20BB6E2D250F985A00A4B386 /* TriangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
+		20BB6E2E250F985A00A4B386 /* TriangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
+		20BB6E30250F99D300A4B386 /* Triangle.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Triangle.fsh; sourceTree = "<group>"; };
+		20BB6E32250F99FF00A4B386 /* Triangle.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Triangle.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,7 @@
 				20BB6DF9250F83E600A4B386 /* SceneDelegate.m */,
 				20BB6DFB250F83E600A4B386 /* ViewController.h */,
 				20BB6DFC250F83E600A4B386 /* ViewController.m */,
+				20BB6E35250F9BD300A4B386 /* Triangle */,
 				20BB6DFE250F83E600A4B386 /* Main.storyboard */,
 				20BB6E01250F83E700A4B386 /* Assets.xcassets */,
 				20BB6E03250F83E700A4B386 /* LaunchScreen.storyboard */,
@@ -135,6 +146,19 @@
 				20BB6E1E250F83E800A4B386 /* Info.plist */,
 			);
 			path = OpenGLES_PracticeUITests;
+			sourceTree = "<group>";
+		};
+		20BB6E35250F9BD300A4B386 /* Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				20BB6E2A250F948600A4B386 /* TriangleViewController.h */,
+				20BB6E2B250F948600A4B386 /* TriangleViewController.m */,
+				20BB6E2D250F985A00A4B386 /* TriangleView.h */,
+				20BB6E2E250F985A00A4B386 /* TriangleView.m */,
+				20BB6E30250F99D300A4B386 /* Triangle.fsh */,
+				20BB6E32250F99FF00A4B386 /* Triangle.vsh */,
+			);
+			path = Triangle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BB6E05250F83E700A4B386 /* LaunchScreen.storyboard in Resources */,
+				20BB6E33250F99FF00A4B386 /* Triangle.vsh in Resources */,
+				20BB6E31250F99D400A4B386 /* Triangle.fsh in Resources */,
 				20BB6E02250F83E700A4B386 /* Assets.xcassets in Resources */,
 				20BB6E00250F83E600A4B386 /* Main.storyboard in Resources */,
 			);
@@ -269,7 +295,9 @@
 			files = (
 				20BB6DFD250F83E600A4B386 /* ViewController.m in Sources */,
 				20BB6DF7250F83E600A4B386 /* AppDelegate.m in Sources */,
+				20BB6E2F250F985A00A4B386 /* TriangleView.m in Sources */,
 				20BB6E08250F83E700A4B386 /* main.m in Sources */,
+				20BB6E2C250F948600A4B386 /* TriangleViewController.m in Sources */,
 				20BB6DFA250F83E600A4B386 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
